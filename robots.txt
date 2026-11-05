@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sovereignhivesecurity.com.au/sitemap.xml

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security and trust | Sovereign Hive</title>
+<meta name="description" content="How Sovereign Hive approaches security, privacy and responsible disclosure.">
+<link rel="canonical" href="https://sovereignhivesecurity.com.au/security.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+<meta name="theme-color" content="#060a10">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<nav aria-label="Primary">
+<a class="brand" href="/">SOVEREIGN<span>HIVE</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+<ul id="nav-list" class="nav-list"><li><a href="/">Home</a></li><li><a href="/platform.html">Platform</a></li><li><a href="/services.html">Services</a></li><li><a href="/pricing.html">Pricing</a></li><li><a href="/security.html" aria-current="page">Security</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul>
+</nav>
+</header>
+<main id="main">
+
+<section class="hero small"><h1>Security &amp; trust</h1><p class="sub">Show the work. No invented claims.</p></section>
+<section><h2>How the platform is being built</h2><ul class="list">
+<li>Role-based clearance checks on API routes, with bearer-key validation.</li>
+<li>Rate limiting on the main API.</li>
+<li>Append-mode JSONL audit logging.</li>
+<li>HSTS and a Content Security Policy on the web interface.</li>
+<li>SBOM generation (CycloneDX and SPDX) in the air-gap bundle build.</li>
+<li>SHA-256 checksum and signature verification at install.</li>
+<li>Read-only container filesystem where configured.</li>
+</ul><p>These describe the code as it stands during development. They are not certifications, and no SOC 2 or ISO certification is claimed.</p></section>
+<section><h2>Rules we work by</h2><ul class="list">
+<li>Defence only: no state or military weaponisation.</li><li>Scope before work.</li><li>Local or forked reproduction; no production testing without authorisation.</li><li>No denial-of-service against shared infrastructure.</li><li>Coordinated disclosure only. No public zero-day drops.</li><li>Scanner output alone is not a report.</li></ul></section>
+<section id="disclosure"><h2>Responsible disclosure</h2><p>If you find a vulnerability in Sovereign Hive software or this website, please report it privately. Email <a href="mailto:duaynegregg@sovereignhivesecurity.com.au?subject=Security%20report">duaynegregg@sovereignhivesecurity.com.au</a> (also listed in <a href="/.well-known/security.txt">security.txt</a>). Please do not disclose publicly until we have had a chance to fix it.</p></section>
+<section><h2>Privacy</h2><p>This site sets no cookies, loads no third-party scripts and uses no analytics. Privacy practices for the platform follow the Australian Privacy Principles; the full policy will be published before launch.</p></section>
+</main>
+<footer class="site-footer">
+<p><span class="badge">In development &middot; early access</span></p>
+<p>Sovereign Hive &middot; ABN 24 661 737 376 &middot; Queensland, Australia</p>
+<p>Contact: <a href="mailto:duaynegregg@sovereignhivesecurity.com.au">duaynegregg@sovereignhivesecurity.com.au</a></p>
+<p>Defence only. Coordinated disclosure only. No certifications are claimed.</p>
+</footer>
+<script src="/site.js" defer></script>
+</body>
+</html>
